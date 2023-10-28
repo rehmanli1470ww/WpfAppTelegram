@@ -1,0 +1,232 @@
+﻿<Window x:Class="WpfAppTelegram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTelegram"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title= "MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+        <!--  Colum 0 -->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <!--  Row 0 -->
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*">
+
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <materialDesign:PackIcon Kind="Menu" Grid.Column="0" Margin="15" BorderThickness="0" Height="30" Width="30" Foreground="Gray"/>
+                <Border Grid.Column="1" CornerRadius="10" Background="LightGray" Height="40" RenderTransformOrigin="50,50" Width="180">
+                    <TextBox BorderThickness="0" Margin="0 5 5 5" Text="Serch" Foreground="Gray" Background="LightGray" FontSize="20"/>
+                </Border>
+                
+            </Grid>
+            <!--  Row 1-->
+
+            <Grid Grid.Row="1" Background="Blue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" CornerRadius="50" Background="HotPink" Height="50" RenderTransformOrigin="50,50" Width="50">
+                    <Button Foreground="White" Background="HotPink" BorderThickness="0" Width="35" Height="35" Content="ES" FontSize="25" FontWeight="Bold"/>
+                </Border>
+                <StackPanel Grid.Column="1">
+                    <Button Margin="0 5 0 0" Content=" Eva Summer" Foreground="White" Background="Blue" BorderThickness="0" Height="30" HorizontalContentAlignment="Left" FontWeight="Bold"></Button>
+                    <Button Margin="0 -5 0 0" Content=" Reminds me of a Chinese ..." Foreground="White" Background="Blue" BorderThickness="0" Height="30" HorizontalContentAlignment="Left" FontWeight="DemiBold"></Button>
+                </StackPanel>
+                <StackPanel Grid.Column="2">
+                    <Button Content="11:00" Background="Blue" Foreground="White" BorderThickness="0"  Height="30" FontWeight="DemiBold"/>
+                    <materialDesign:PackIcon Kind="Pin" Foreground="White" Margin="15 0 0 0" BorderThickness="0" Height="25" Width="25">
+                        <materialDesign:PackIcon.RenderTransform>
+                            <RotateTransform Angle="400" CenterY="10" CenterX="10"/>
+                        </materialDesign:PackIcon.RenderTransform>
+                    </materialDesign:PackIcon>
+                </StackPanel>
+                
+            </Grid>
+            
+            <!-- Row 2-->
+
+            <Grid Grid.Row="2" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" CornerRadius="50" Background="Pink" Height="50" RenderTransformOrigin="50,50" Width="50">
+                    <Button Foreground="White" Background="Pink" BorderThickness="0" Width="35" Height="35" Content="AS" FontSize="25" FontWeight="Bold"/>
+                </Border>
+                <StackPanel Grid.Column="1">
+                    <Button Margin="0 5 0 0" Content=" Alexsandra Smitch" Foreground="Black" Background="White" BorderThickness="0" Height="30" HorizontalContentAlignment="Left" FontWeight="Bold"></Button>
+                    <Button Margin="0 -5 0 0" Content=" This is amazing" Foreground="Gray" Background="White" BorderThickness="0" Height="30" HorizontalContentAlignment="Left" FontWeight="DemiBold"></Button>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Background="White">
+                    <Button Content="11:00" Background="White" Foreground="Gray" BorderThickness="0"  Height="30" FontWeight="DemiBold"/>
+                    <Border Grid.Column="0" CornerRadius="50" Background="Blue" Height="25" RenderTransformOrigin="50,50" Width="25">
+                        <Button Foreground="White" Background="blue" BorderThickness="0" Width="17" Height="17" Content="2" FontSize="12" FontWeight="Bold" />
+                    </Border>
+                </StackPanel>
+
+            </Grid>
+            
+            <!-- Row 3 -->
+
+
+            <Grid Grid.Row="3" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" CornerRadius="50" Background="Orange" Height="50" RenderTransformOrigin="50,50" Width="50">
+                    <Button Foreground="White" Background="Orange" BorderThickness="0" Width="35" Height="35" Content="MA" FontSize="20" FontWeight="Bold"/>
+                </Border>
+                <StackPanel Grid.Column="1">
+                    <Button Margin="0 5 0 0" Content=" Mike Apple" Foreground="Black" Background="White" BorderThickness="0" Height="30" HorizontalContentAlignment="Left" FontWeight="Bold"></Button>
+                    <Button Margin="0 -5 0 0" Content=" Stiker" Foreground="Blue" Background="White" BorderThickness="0" Height="30" HorizontalContentAlignment="Left" FontWeight="DemiBold"></Button>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Background="White">
+                    <Button Content="9:00" Background="White" Foreground="Gray" BorderThickness="0"  Height="30" FontWeight="DemiBold"/>
+                    <Border Grid.Column="0" CornerRadius="50" Background="Gray" Height="25" RenderTransformOrigin="50,50" Width="25">
+                        <Button Foreground="White" Background="Gray" BorderThickness="0" Width="17" Height="17" Content="2" FontSize="12" FontWeight="Bold" />
+                    </Border>
+                </StackPanel>
+
+            </Grid>
+            
+            <!-- Row 4-->
+
+            <Grid Grid.Row="4" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" CornerRadius="50" Background="Green" Height="50" RenderTransformOrigin="50,50" Width="50">
+                    <Button Foreground="White" Background="Green" BorderThickness="0" Width="35" Height="35" Content="EC" FontSize="20" FontWeight="Bold"/>
+                </Border>
+                <StackPanel Grid.Column="1">
+                    <Button Margin="0 5 0 0" Content=" Evening Club" Foreground="Black" Background="White" BorderThickness="0" Height="30" HorizontalContentAlignment="Left" FontWeight="Bold"></Button>
+                    <Button Margin="0 -5 0 0" Content=" Eva:Photo" Foreground="Blue" Background="White" BorderThickness="0" Height="30" HorizontalContentAlignment="Left" FontWeight="DemiBold"></Button>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Background="White">
+                    <Button Content="8:00" Background="White" Foreground="Gray" BorderThickness="0"  Height="30" FontWeight="DemiBold"/>
+                    
+                </StackPanel>
+
+            </Grid>
+
+
+            <!-- Row 5-->
+
+            <Grid Grid.Row="5" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" CornerRadius="50" Background="Orchid"  Height="50" RenderTransformOrigin="50,50" Width="50">
+                    <Button Foreground="White" Background="Orchid" BorderThickness="0" Width="35" Height="35" Content="NP" FontSize="20" FontWeight="Bold"/>
+                </Border>
+                <StackPanel Grid.Column="1">
+                    <Button Margin="0 5 0 0" Content=" Natali Peker" Foreground="Black" Background="White" BorderThickness="0" Height="30" HorizontalContentAlignment="Left" FontWeight="Bold"></Button>
+                    <Button Margin="0 -5 0 0" Content=" OK,greay" Foreground="Gray" Background="White" BorderThickness="0" Height="30" HorizontalContentAlignment="Left" FontWeight="DemiBold"></Button>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Background="White">
+                    <Button Content="5:00" Background="White" Foreground="Gray" BorderThickness="0"  Height="30" FontWeight="DemiBold"/>
+
+                </StackPanel>
+
+            </Grid>
+            
+            <!-- Row 6-->
+
+            <Grid Grid.Row="6" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" CornerRadius="50" Background="OrangeRed" Height="50" RenderTransformOrigin="50,50" Width="50">
+                    <Button Foreground="White" Background="OrangeRed" BorderThickness="0" Width="35" Height="35" Content="DJ" FontSize="20" FontWeight="Bold"/>
+                </Border>
+                <StackPanel Grid.Column="1">
+                    <Button Margin="0 5 0 0" Content=" Davy Jones" Foreground="Black" Background="White" BorderThickness="0" Height="30" HorizontalContentAlignment="Left" FontWeight="Bold"></Button>
+                    <Button Margin="0 -5 0 0" Content=" Keynote.pdf" Foreground="Blue" Background="White" BorderThickness="0" Height="30" HorizontalContentAlignment="Left" FontWeight="DemiBold"></Button>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Background="White">
+                    <Button Content="4:00" Background="White" Foreground="Gray" BorderThickness="0"  Height="30" FontWeight="DemiBold"/>
+
+                </StackPanel>
+
+            </Grid>
+
+        </Grid>
+
+        <!--  Colum 1-->
+        <Border Grid.Column="1" BorderThickness="1" BorderBrush="Gray">
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="5*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="0.3*"/>
+                        <ColumnDefinition Width="0.3*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Background="White">
+                        <Button Content=" Eva Summer" Foreground="Black" Background="White" BorderThickness="0" Height="30" HorizontalContentAlignment="Left" FontWeight="Bold"></Button>
+                        <Button Content=" online" Foreground="Blue" Background="White" BorderThickness="0" HorizontalContentAlignment="Left"></Button>
+                    </StackPanel>
+                    <materialDesign:PackIcon Kind="Search" Foreground="Gray" Grid.Column="2" Margin="5 18 5 5" BorderThickness="0" Height="25" Width="25"/>
+                    <materialDesign:PackIcon Kind="DotsVertical" Foreground="Gray" Grid.Column="3" Margin="5 18 5 5" BorderThickness="0" Height="25" Width="25"/>
+
+                </Grid>
+                <Grid Grid.Row="1" Background="Gray"/>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <materialDesign:PackIcon Kind="Paperclip" Foreground="Gray" Grid.Column="0" Margin="15 15 5 5" BorderThickness="0" Height="30" Width="30">
+                        <materialDesign:PackIcon.RenderTransform>
+                            <RotateTransform Angle="-140" CenterY="18" CenterX="18"/>
+                        </materialDesign:PackIcon.RenderTransform>
+                    </materialDesign:PackIcon>
+                    <Button  Grid.Column="1" Foreground="Gray" Content="Write a message..." HorizontalAlignment="Left" Background="White" FontSize="20" BorderThickness="0"/>
+                    <materialDesign:PackIcon Kind="SmileyOutline" Foreground="Gray" Grid.Column="2" Margin="15 15 5 5" BorderThickness="0" Height="30" Width="30"/>
+                    <materialDesign:PackIcon Kind="Microphone" Foreground="Gray" Grid.Column="3" Margin="15 15 5 5" BorderThickness="0" Height="30" Width="30"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
